@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../CSS/login.css">
+
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="box">
+
+            <!-------LOGIN PAGE---------->
+
+            <div class="box-login" id="login">
+
+                <div class="top-header">
+                    <h3>LOGIN</h3>
+                    <small>Please fill-up the following:</small>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="email" class="input-box" id="logEmail" requuired>
+                        <label for="logEmail">Email Address</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="input-box" id="logpass" requuired>
+                        <label for="logpass">Password</label>
+                            <div class="eye-area">
+                                <div class="eye-box" onclick="myLogPassword()">
+                                    
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="remember">
+                        <input type="checkbox" id="forCheck" class="check" requuired>
+                        <label for="forCheck"> Remember Me</label>
+                    </div>
+
+                    <div>
+                        <div class="input-field">
+                            <input type="submit" onclick="window.location.href='C:\HTML\Activities\web\customer\landing.html';" class="input-submit" value="Login">
+                        </div>
+
+                        <div class="forgot">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-----------Register Page-------->
+
+            <div class="box-register" id="register">
+
+                <div class="top-header">
+                    <h3>Register</h3>
+                    <small>Please fill-up the following:</small>
+                </div>
+
+                <div class="input-field">
+                    <div class="input-field">
+                        <input type="text" class="input-box" id="regUser" requuired>
+                        <label for="regUser">Username</label>
+                    </div>
+
+                <div class="input-field">
+                    <div class="input-field">
+                        <input type="email" class="input-box" id="regEmail" requuired>
+                        <label for="regEmail">Email Address</label>
+                    </div>  
+
+                    <div class="input-field">
+                        <input type="password" class="input-box" id="regpass" requuired>
+                        <label for="regpass">Password</label>
+                           
+                    </div>
+
+                    <div class="remember">
+                        <input type="checkbox" id="forCheck2" class="check" requuired>
+                        <label for="forCheck2"> Remember Me</label>
+                    </div>
+
+                    <div>
+                        <div class="input-field">
+                            <input type="submit" class="input-submit" value="Sign Up">
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!---------ANIMATION------------>
+            <div class="switch">
+                <a href="#" class="login" onclick="login()">Login</a>
+                <a href="#" class="register" onclick="register()">Register</a>
+
+                <div class="btn-act" id="btn"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var a = document.getElementById('login');
+        var b = document.getElementById('register');
+        var c = document.getElementById('btn');
+
+        function login(){
+            a.style.left = "27px";
+            b.style.left = "350px";
+            c.style.left = "0px";
+        }
+        function register(){
+            a.style.left = "-357px";
+            b.style.left = "-25px";
+            c.style.left = "150px";
+        }
+
+        function myLogPassword(){
+
+            var d = document.getElementById('logpass'); 
+            var e = document.getElementById('eye');
+            var f = document.getElementById('eye-slash');
+
+            if(d === "password"){
+                d.type = "text"
+                e.style.opacity = "0";
+                f.style.opacity = "1";
+            }else{
+                d.type = "password"
+                e.style.opacity = "1";
+                f.style.opacity = "0";
+            }
+
+            function RegLogPassword(){
+
+var d = document.getElementById('regpass'); 
+var e = document.getElementById('eye1');
+var f = document.getElementById('eye-slash2');
+
+if(g === "password"){
+    g.type = "text"
+    h.style.opacity = "0";
+    i.style.opacity = "1";
+}else{
+    g.type = "password"
+    h.style.opacity = "1";
+    i.style.opacity = "0";
+}
+        }
+    }
+
+    </script>
+</body>
+</html>
